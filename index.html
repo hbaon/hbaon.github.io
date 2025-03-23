@@ -1,51 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nguyen Hoang Bao | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 </head>
+
 <body>
-  <header>
+  <!-- Header Section -->
+  <header class="text-center py-5" style="background-color: #be39b5; color: white;">
     <h1>Nguyen Hoang Bao</h1>
-    <p>Aspiring Computer Scientist | STEM Enthusiast | High School Student</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <p>Aspiring Computer Scientist | STEM Enthusiast | High School Student (Chu Van An for Gifted Students, Hanoi)</p>
+    <img src="avatar.jpeg" alt="Nguyen Hoang Bao" class="rounded-circle" style="width: 200px; height: 200px;">
+    <nav class="mt-3">
+      <a href="index.html" class="btn btn-primary">Home</a>
+      <!-- Add more links if needed -->
     </nav>
   </header>
 
-  <main>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Eco Purify Project:</strong> Developed a sustainable water filtration system for agriculture.</li>
-        <li><strong>STEMBridge Project:</strong> Organized STEM workshops for rural schools.</li>
-        <li><strong>Personal Finance Tracker App:</strong> Created a finance app with 1,000+ downloads.</li>
-      </ul>
+  <main class="container my-5">
+    <!-- About Section -->
+    <section id="about" class="mb-5">
+      <h2>About Me</h2>
+      <p>Hi! I'm Nguyen Hoang Bao, a high school student with a passion for computer science. I love coding, problem-solving, and learning new things. I'm interested in artificial intelligence, web development, and software engineering. In my free time, I enjoy reading, playing chess, piano, and volunteering for STEM projects.</p>
     </section>
 
-    <section id="achievements">
+      <!-- Selected Projects Section -->
+      <section class="cards-section text-center mb-5" style="background-color: #f1f1f1; padding: 20px;">
+        <h2>Projects</h2>
+        <div class="row">
+          
+            <!-- https://github.com/hbaon/unity-2048 -->
+            <div class="item item-pink col-lg-4 col-12">
+              <div class="item-inner">
+                  <h3 class="title">Unity 2048 Game <br> <img alt="GitHub stars" src="https://img.shields.io/github/stars/hbaon/unity-2048?style=social"> </h3>
+                  <img src="./figures/unity2048.jpg" class="card-img-top" alt="Unity 2048" style="width: 100%; height: 200px;">
+                  <p class="intro">Extended Version of 2048 Game</p>
+                  <a class="link" href="https://github.com/hbaon/unity-2048" target="_blank"><span></span></a>
+              </div>
+          </div>
+
+          <!-- https://github.com/hbaon/english-test-vocab -->
+          <!-- English Vocabulary App for SAT, GRE, TOEFL, GMAT, CAT, IELTS, and More -->
+          <div class="item item-pink col-lg-4 col-12">
+              <div class="item-inner">
+                  <h3 class="title">English Vocabulary App <br> <img alt="GitHub stars" src="https://img.shields.io/github/stars/hbaon/english-test-vocab?style=social"> </h3>
+                  <img src="./figures/vocabApp.jpeg" class="card-img-top" alt="English Vocabulary App" style="width: 100%; height: 200px;">
+                  <p class="intro">SAT, GRE, TOEFL, GMAT, CAT, IELTS, and More</p>
+                  <a class="link" href="https://github.com/hbaon/english-test-vocab" target="_blank"><span></span></a>
+              </div>
+          </div>
+
+          <!-- https://github.com/hbaon/cs404-python-ds -->
+          <!-- CS 404/504 – Special Topics: Python Programming for Data Science -->
+          <div class="item item-pink col-lg-4 col-12">
+              <div class="item-inner">
+                  <h3 class="title">Python Programming for Data Science <br> <img alt="GitHub stars" src="https://img.shields.io/github/stars/hbaon/cs404-python-ds?style=social"> </h3>
+                  <img src="./figures/pythonDS.png" class="card-img-top" alt="Python Programming for Data Science" style="width: 100%; height: 200px;">
+                  <p class="intro">CS 404/504 – Special Topics</p>
+                  <a class="link" href="https://github.com/hbaon/cs404-python-ds" target="_blank"><span></span></a>
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+    <!-- Selected Open-Source Projects Section -->
+    <section class="cards-section text-center mb-5" style="background-color: #f1f1f1; padding: 20px;">
+      <h2>Selected Open-Sources</h2>
+      <div class="row">
+        <!-- https://github.com/hbaon/image-classification -->
+        <!-- https://www.researchgate.net/figure/Take-a-binary-classification-task-of-cats-and-dogs-as-an-example-a-the-left-figure-is_fig2_375040778 -->
+        <div class="item item-pink col-lg-4 col-12">
+          <div class="item-inner">
+              <h3 class="title">Image Classification <br> <img alt="GitHub stars" src="https://img.shields.io/github/stars/hbaon/image-classification?style=social"> </h3>
+              <img src="./figures/image_classification.png" class="card-img-top" alt="Image Classification" style="width: 100%; height: 200px;">
+              <p class="intro">Convolutional Neural Network</p>
+              <a class="link" href="https://github.com/hbaon/image-classification" target="_blank"><span></span></a>
+          </div>
+      </div>
+
+      <!-- https://github.com/hbaon/object-detection -->
+      <!-- https://daniel-schwalm.medium.com/real-time-object-detection-with-tensorflow-object-detection-api-and-opencv-9c9430a18fdf -->
+      <div class="item item-pink col-lg-4 col-12">
+        <div class="item-inner">
+            <h3 class="title">Object Detection <br> <img alt="GitHub stars" src="https://img.shields.io/github/stars/hbaon/object-detection?style=social"> </h3>
+            <img src="./figures/object_detection.png" class="card-img-top" alt="Object Detection" style="width: 100%; height: 200px;">
+            <p class="intro">YOLO Model</p>
+            <a class="link" href="https://github.com/hbaon/object-detection" target="_blank"><span></span></a>
+          </div>
+      </div>
+
+      <!-- https://github.com/hbaon/facial-recognition -->
+      <div class="item item-pink col-lg-4 col-12">
+        <div class="item-inner">
+            <h3 class="title">Facial Recognition <br> <img alt="GitHub stars" src="https://img.shields.io/github/stars/hbaon/facial-recognition?style=social"> </h3>
+            <img src="./figures/facial_recognition.png" class="card-img-top" alt="Facial Recognition" style="width: 100%; height: 200px;">
+            <p class="intro">OpenCV</p>
+            <a class="link" href="https://github.com/hbaon/facial-recognition" target="_blank"><span></span></a>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Adding a rule to separate the sections -->
+    <hr>
+
+
+    <!-- <section id="activities"> -->
+    <section id="activities" style="background-color: #f0f8ff; padding: 20px;">
+
+      <h2>Activities</h2>
+      <div class="row">
+        <!-- Eco Purify Project Card -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Eco Purify Project</h5>
+              <p class="card-text">Developed a sustainable water filtration system for agriculture.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- STEMBridge Project Card -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">STEMBridge Project</h5>
+              <p class="card-text">Organized STEM workshops for rural schools.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- Education Section -->
+    <section id="education" class="mb-5" style="background-color: #f0f8ff; padding: 20px;">
+      <h2>Education</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>Chu Van An High School for Gifted Students</h3>
+          <p><strong>Location:</strong> Hanoi, Vietnam</p>
+          <p><strong>Grade:</strong> 11</p>
+          <p><strong>Major:</strong> Informatics</p>
+        </div>
+        <div class="col-lg-6">
+          <h3>Online Courses</h3>
+          <p><strong>CS50's Introduction to Computer Science</strong> (Harvard University)</p>
+          <p><strong>Deep Learning Specialization</strong> (Coursera)</p>
+          <p><strong>Full-Stack Web Development with React Specialization</strong> (Coursera)</p>
+        </div>
+
+
+    </div>
+  </section>
+
+
+    
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="mb-5" style="background-color: #f0f8ff; padding: 20px;">
       <h2>Achievements</h2>
       <ul>
-        <li>First Prize, Olympiad of Informatics - Grade 10 District-level Contest (2024)</li>
-        <li>Bronze Medal, Northern Delta and Coastal Area Olympiad of Informatics (2024)</li>
-        <li>Second Prize, Olympiad of Informatics - Hanoi City-level Contest (2025)</li>
+        <li><strong>First Prize</strong>, Olympiad of Informatics - Grade 10 District-level Contest (2024)</li>
+        <li><strong>Consolation Prize</strong>, Northern Delta and Coastal Area Olympiad of Informatics (2024)</li>
+        <li><strong>Third Prize</strong>, Olympiad of Informatics - Hanoi City-level Contest (2025)</li>
+        <li><strong>Consolation Prize</strong>, Olympiad of Informatics - Vietnam National University, Hanoi (2025)</li>
+        <li><strong>Third Prize</strong>, Olympiad of Informatics - Grade 11 District-level Contest (2025)</li>
+        <li><strong>Bronze Medal</strong>, International STEM Olympiad - <span style="color:red; font-style:italic;">Coding</span> Competition (2025)</li>
+        <li><strong>Bronze Medal</strong>, International STEM Olympiad - <span style="color:red; font-style:italic;">Math</span> Competition (2025)</li>
       </ul>
     </section>
 
-    <section id="skills">
+    <!-- Skills Section -->
+    <section id="skills" class="mb-5" style="background-color: #f0f8ff; padding: 20px;">
       <h2>Skills</h2>
-      <p>Programming: Python, Java, C++</p>
-      <p>Web Development: HTML, CSS, JavaScript</p>
-      <p>Languages: English (IELTS 7.5 target), Vietnamese (Fluent)</p>
+      <p><strong>Programming:</strong> C++, Python, C#, SQL</p>
+      <p><strong>Web Development:</strong> HTML, CSS, JavaScript</p>
+      <p><strong>Languages:</strong> English (IELTS 7.5), Vietnamese (Fluent)</p>
     </section>
   </main>
 
-  <footer>
+  <!-- Footer Section -->
+  <footer class="text-center py-3">
     <p>&copy; 2025 Nguyen Hoang Bao | <a href="https://github.com/hbaon">GitHub</a> | <a href="https://linkedin.com/in/hbaon">LinkedIn</a></p>
   </footer>
+
+  <!-- Scripts -->
+  <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
+  <script src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
+  <script src="assets/plugins/iconfont/iconfont.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
