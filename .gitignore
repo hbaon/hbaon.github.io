@@ -1,0 +1,48 @@
+# System files
+.DS_Store
+
+# Build and minified files
+*.min.js
+*.min.css
+*.map
+dist/
+build/
+
+# Dependency directories
+node_modules/
+bower_components/
+jspm_packages/
+
+# Log and temp files
+*.log
+*.pid
+*.seed
+*.tgz
+*.swp
+*.swo
+*~
+
+# Environment and config files
+.env
+.eslintcache
+.nyc_output
+.grunt
+.npm
+.yarn-integrity
+.editorconfig
+.eslintignore
+.npmignore
+
+# Plugin/library artifacts
+assets/plugins/*/dist/
+assets/plugins/*/node_modules/
+assets/plugins/*/bower_components/
+assets/plugins/*/test/
+assets/plugins/*/examples/
+assets/plugins/*/example/
+
+# Fonts and images (optional, remove if you want to keep these tracked)
+assets/css/fonts/
+assets/fontawesome/webfonts/
+assets/fontawesome/svgs/
+assets/fontawesome/sprites/ 
