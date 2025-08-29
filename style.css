@@ -600,7 +600,7 @@ a.dotted-link:hover {
   color: #ccd1d6;
 }
 
-.info .svg-inline--fa.fa-envelope-o {
+.info .icon-envelope {
   font-size: 14px;
 }
 
@@ -839,7 +839,7 @@ a.dotted-link:hover {
   color: #fff;
 }
 
-.footer .fa-heart {
+.footer .icon-heart {
   color: #fb866a;
 }
 
@@ -1105,4 +1105,17 @@ body[data-theme="dark"] .text-muted {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}
+
+/* Simple CSS Icons to replace FontAwesome */
+.icon-envelope::before {
+  content: "✉";
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.icon-heart::before {
+  content: "♥";
+  font-size: 16px;
+  margin-right: 5px;
 }
